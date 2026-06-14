@@ -1,0 +1,79 @@
+<style>
+body{
+    font-family: Arial, sans-serif;
+    background:#f4f4f4;
+    margin:0;
+}
+header{
+    background:#0066cc;
+    color:white;
+    padding:15px;
+    text-align:center;
+}
+.container{
+    max-width:500px;
+    margin:20px auto;
+    background:white;
+    padding:20px;
+    border-radius:10px;
+}
+input,select,button{
+    width:100%;
+    padding:10px;
+    margin-top:10px;
+}
+button{
+    background:#0066cc;
+    color:white;
+    border:none;
+    cursor:pointer;
+}
+.dashboard{
+    margin-top:30px;
+    background:#eef;
+    padding:15px;
+    border-radius:10px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h2>Niger Airtime & Data App</h2>
+</header>
+
+<div class="container">
+
+<h3>Siyan Airtime</h3>
+
+<select id="network">
+<option>Airtel Niger</option>
+<option>Zamani Telecom</option>
+<option>Moov Africa Niger</option>
+</select>
+
+<input type="text" id="phone" placeholder="Lambar Waya">
+
+<input type="number" id="amount" placeholder="Adadin Kudi">
+
+<button onclick="buyAirtime()">Saya Airtime</button>
+
+<div id="result"></div>
+
+<div class="dashboard">
+<h3>Admin Dashboard</h3>
+
+<p>Users: <span id="users">125</span></p>
+
+<p>Transactions: <span id="trx">540</span></p>
+
+<p>Revenue: <span id="rev">850000</span> CFA</p>
+
+<button onclick="viewTransactions()">
+Duba Transactions
+</button>
+
+</div>
+
+</div>
